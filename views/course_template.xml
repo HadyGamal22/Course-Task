@@ -1,0 +1,23 @@
+<odoo>
+    <template id="courses_template" name="Courses">
+        <t t-call="website.layout">
+            <div class="container">
+                <h1>Available Courses</h1>
+                <t t-foreach="courses" t-as="course">
+                    <div class="course-card">
+                        <h2><t t-esc="course.name"/></h2>
+                        <p><strong>Instructor:</strong> <t t-esc="course.instructor_id.name"/></p>
+                        <p><strong>Room:</strong> <t t-esc="course.room_id.name"/></p>
+                        <p><strong>Description:</strong> <t t-esc="course.description"/></p>
+                        <p><strong>Lessons:</strong></p>
+                        <ul>
+                            <t t-foreach="course.lesson_ids" t-as="lesson">
+                                <li><t t-esc="lesson.name"/></li>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>

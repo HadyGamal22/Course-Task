@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_course_management,access.course.management.user,model_course_management,,1,1,1,1
+access_room_management,access.room.management,model_room_management,,1,1,1,1
+access_lesson_management,access.lesson.management,model_lesson_management,,1,1,1,1
+access_res_partner,access.res.partner,model_res_partner,,1,1,1,1
+

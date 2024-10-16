@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <menuitem name="Course Task" id="base_menu_course"
+        web_icon="course_task,static/icons/course_bg.png"
+        />
+        <menuitem name="Course" id="base_menu_courses" parent="base_menu_course"/>
+        <menuitem name="Lesson" id="base_menu_lesson" parent="base_menu_course"/>
+<!--        <menuitem name="Room" id="base_menu_courses" parent="base_menu_rooms"/>-->
+
+    </data>
+</odoo>
